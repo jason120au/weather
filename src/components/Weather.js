@@ -41,3 +41,7 @@ const WeatherCard = ({weatherData}) => (
 )
 
 export default WeatherCard;
+
+
+
+
