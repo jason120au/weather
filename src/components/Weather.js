@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import moment from 'moment';
 import { Button } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
 const refresh = () => {
   window.location.reload();
@@ -14,7 +15,7 @@ const WeatherCard = ({weatherData}) => (
 
       <div className="top">
         <p className="header">{weatherData.name}</p>
-        <Button className="button" inverted color='red' circular icon='refresh' onClick={refresh} />
+        <Button className="button" inverted color='blue' circular icon='refresh' onClick={refresh} />
       </div>
       <div className="flex">
         <p className="day">{moment().format('dddd')}, <span>{moment().format('Do MMMM YYYY')}</span></p>
