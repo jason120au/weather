@@ -12,6 +12,7 @@ const refresh = () => {
 const WeatherCard = ({weatherData}) => (
  
   <div className="main">
+    <h1></h1>
 
       <div className="top">
         <p className="header">{weatherData.name}</p>
@@ -25,7 +26,7 @@ const WeatherCard = ({weatherData}) => (
       <div className="flex">
         <p className="temp">Temperature: {Math.round(weatherData.main.temp)}&deg;C</p>
         <p className="temp">Humidity: {weatherData.main.humidity}%</p>  
-        <p className="wind">Wind: {weatherData.wind.deg}&deg; at {Math.round(weatherData.wind.speed)* 3.6}km/h</p>
+        <p className="wind">Wind: {weatherData.wind.deg}&deg; at {Math.round(weatherData.wind.speed)* 3.6}km/h Gust: {Math.round(weatherData.wind.gust)* 3.6}</p>
       </div>
 
       <div className="flex">
