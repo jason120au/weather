@@ -1,1 +1,9 @@
-{}
+{
+  "function": {
+    "weather43d8a6fe": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
+}
