@@ -2,6 +2,10 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 import Weather from './components/Weather';
 import { Dimmer, Loader } from 'semantic-ui-react';
+import Autocomplete from './components/autocomplete';
+
+
+
 export default function App() {
   
   const [lat, setLat] = useState([]);
@@ -27,6 +31,10 @@ export default function App() {
   
   return (
 <div className="App">
+<div>
+  <Autocomplete class="autocomplete-box"></Autocomplete>
+    
+ </div>
       {(typeof data.main != 'undefined') ? (
         <Weather weatherData={data}/>
       ): (
@@ -37,8 +45,7 @@ export default function App() {
        </div>
        
      )}
-
-     
+  
  </div>
   );
 }

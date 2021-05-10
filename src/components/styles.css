@@ -1,11 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+.autocomplete {
+    font-family: 'Recursive', sans-serif;
+    margin-bottom: 10pt;
+    color:blue;
+    width: 100%;
+    border-radius: 4px;
+
+}
+
+
+  .sugg-option {
+    display: flex;
+    color: blue;
+  }
+  .sugg-option :hover
+  {
+      background-color: lightgrey;
+  }
+  .sugg-option .name {
+      color: blue;
+      display:flex;
+
+  }
 
 .main{
     width: 700px;
     border-radius: 20px;
     background-color: #01579b;
+    color: whitesmoke;
+    margin-bottom: 15pt;
+    padding-left:15pt;
+    padding-right:15pt;
 }
-
+    
 .top{
     height: 60px;
     background-color: #424242;
@@ -16,7 +43,10 @@
     display: flex;
     justify-content: space-between;
 }
-
+.h1{
+    color: whitesmoke;
+    margin-left: 2em;
+}
 .header{
     background-color: #424242;
     color: whitesmoke;
@@ -27,7 +57,7 @@
 }
 
 .day{
-    padding: 15px;
+    padding: 10px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 24px;
@@ -35,7 +65,7 @@
 }
 
 .temp{
-    padding: 15px;
+    padding: 10px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
@@ -47,26 +77,33 @@
 }
 
 .sunrise-sunset{
-    padding: 15px;
+    padding: 10px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 16px;
 }
 
 .wind{
-    padding: 15px;
+    padding: 10px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 16px;
 }
 .rain{
-    padding: 15px;
+    padding: 10px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 16px;
 }
+.last-update {
+    padding: 10px;
+    color: whitesmoke;
+    font-family: 'Recursive', sans-serif;
+    font-size: 10px;
+    
+}
 .description{
-    padding: 15px;
+    padding: 10px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 24px;
@@ -75,4 +112,5 @@
 .button{
     width: 35px;
     height: 35px;
+    
 }
