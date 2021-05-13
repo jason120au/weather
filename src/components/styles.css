@@ -9,10 +9,12 @@
 }
 .react-autosuggest__suggestions-container{
     color:whitesmoke;
+    margin:0;
+
 }
 .react-autosuggest__input {
     width: 700px;
-    height: 40px;
+    height: 60px;
     border-radius: 20px 20px 0 0;
     padding-left: 30px;
     background-color:#01579b;;
@@ -25,9 +27,9 @@
 .name {
     background-color: #01579b;
     border-radius: 20px 20px 0 0;
-    width:660px;
+    width:700px;
     font-size: 25px;
-    color: whitesmoke;
+    color: black;
     margin-bottom: 20px;
 }
 .react-autosuggest__suggestion  :hover {
@@ -37,26 +39,33 @@
 .react-autosuggest__suggestion {
     background-color:  #01579b;
     color: whitesmoke;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    height:60px;
+    padding-bottom: 70px;
+    /* border-width:2pt; */
+    margin: 0pt;
+    /*padding-top: 10px; */
     width: 660px;
     
 }
-
+li{
+    list-style:none;
+}
   .sugg-option {
     display: flex;
     color: blue;
-    padding-bottom: 20px;
-    height: 30px;
+    /* padding-bottom: 20px; */
+    height: 70px;
   }
 
   .sugg-option .name {
       color: whitesmoke;
       display:flex;
-      margin-bottom:10px;
-      padding-top: 10px;
-      /* line-break:auto; */
-      line-height:40px;
+      /* padding-bottom:1em; */
+      margin-bottom:20px; 
+      padding-bottom: 30px;  
+      line-break:strict;
+      line-height: normal;   
+      border-radius: 20px 20px 0 0; 
   }
 
 .main{
