@@ -10,6 +10,9 @@
 .react-autosuggest__suggestions-container{
     color:whitesmoke;
     margin:0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px
+    
 
 }
 
@@ -42,15 +45,19 @@ ul
     padding-inline-start: 0;
     border-radius: 20px;
     border-color: black;
-    border
 }
+
 .react-autosuggest__suggestion {
     background-color:  #01579b;
     color: whitesmoke;
     height:60px;
     padding-left:2em;
+    padding-right:1em;
+    /* border-bottom-right-radius: 20px; */
+    /* border-top-left-radius: 20px; */
+    padding-top: 1em;
     padding-bottom: 70px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     /* border-width:2pt; */
     margin: 0pt;
     /*padding-top: 10px; */
@@ -67,6 +74,7 @@ li{
     height: 70px;
     padding:0;
   }
+
 
   .sugg-option .name {
       color: whitesmoke;
