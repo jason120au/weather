@@ -16,9 +16,17 @@
 
 }
 
+.react-autosuggest__input :focus {
+
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
 .react-autosuggest__input {
     width: 700px;
     height: 60px;
+    border:10px solid red;
     border-radius: 20px 20px 0 0;
     padding-left: 30px;
     background-color:#01579b;;
@@ -27,6 +35,13 @@
     font-size: x-large;
     
 
+}
+textarea:focus, input:focus{
+    outline:none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .name {
     background-color: #01579b;
@@ -45,12 +60,15 @@ ul
     padding-inline-start: 0;
     border-radius: 20px;
     border-color: black;
+    
 }
 
 .react-autosuggest__suggestion {
     background-color:  #01579b;
     color: whitesmoke;
     height:60px;
+    border:1px solid black;
+    border-radius: 20px;
     padding-left:2em;
     padding-right:1em;
     /* border-bottom-right-radius: 20px; */
