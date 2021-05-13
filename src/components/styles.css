@@ -7,20 +7,56 @@
     border-radius: 4px;
 
 }
+.react-autosuggest__suggestions-container{
+    color:whitesmoke;
+}
+.react-autosuggest__input {
+    width: 700px;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    padding-left: 30px;
+    background-color:#01579b;;
+    border: none;
+    color: whitesmoke;
+    font-size: x-large;
+    
 
+}
+.name {
+    background-color: #01579b;
+    border-radius: 20px 20px 0 0;
+    width:660px;
+    font-size: 25px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+.react-autosuggest__suggestion  :hover {
+    background-color: lightgrey;
+      /* color:black; */
+}
+.react-autosuggest__suggestion {
+    background-color:  #01579b;
+    color: whitesmoke;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 660px;
+    
+}
 
   .sugg-option {
     display: flex;
     color: blue;
+    padding-bottom: 20px;
+    height: 30px;
   }
-  .sugg-option :hover
-  {
-      background-color: lightgrey;
-  }
-  .sugg-option .name {
-      color: blue;
-      display:flex;
 
+  .sugg-option .name {
+      color: whitesmoke;
+      display:flex;
+      margin-bottom:10px;
+      padding-top: 10px;
+      /* line-break:auto; */
+      line-height:40px;
   }
 
 .main{
