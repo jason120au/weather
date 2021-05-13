@@ -12,6 +12,7 @@
     margin:0;
 
 }
+
 .react-autosuggest__input {
     width: 700px;
     height: 60px;
@@ -36,15 +37,24 @@
     background-color: lightgrey;
       /* color:black; */
 }
+ul
+{
+    padding-inline-start: 0;
+    border-radius: 20px;
+    border-color: black;
+    border
+}
 .react-autosuggest__suggestion {
     background-color:  #01579b;
     color: whitesmoke;
     height:60px;
+    padding-left:2em;
     padding-bottom: 70px;
+    border-radius: 20px;
     /* border-width:2pt; */
     margin: 0pt;
     /*padding-top: 10px; */
-    width: 660px;
+    width: 700px;
     
 }
 li{
@@ -55,6 +65,7 @@ li{
     color: blue;
     /* padding-bottom: 20px; */
     height: 70px;
+    padding:0;
   }
 
   .sugg-option .name {
@@ -66,6 +77,7 @@ li{
       line-break:strict;
       line-height: normal;   
       border-radius: 20px 20px 0 0; 
+      padding-left: 0;
   }
 
 .main{
