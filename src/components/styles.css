@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+body {
+    font-family: 'Recursive', sans-serif;
+}
+
 .autocomplete {
     font-family: 'Recursive', sans-serif;
     margin-bottom: 10pt;
@@ -10,10 +14,20 @@
 .react-autosuggest__suggestions-container{
     color:whitesmoke;
     margin:0;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px
+    width: 700px;
+    /* border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px */
     
 
+}
+
+.react-autosuggest__suggestions-container :hover {
+    background-color:#05355a;
+}
+
+.react-autosuggest__suggestions-container :last-child {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .react-autosuggest__input :focus {
@@ -33,6 +47,7 @@
     border: none;
     color: whitesmoke;
     font-size: x-large;
+    font-family: 'Recursive', sans-serif;
     
 
 }
@@ -43,30 +58,35 @@ textarea:focus, input:focus{
 
 .name {
     background-color: #01579b;
-    border-radius: 20px 20px 0 0;
+    /* border-radius: 20px 20px 0 0; */
     width:700px;
     font-size: 25px;
     color: black;
     margin-bottom: 20px;
 }
-.react-autosuggest__suggestion  :hover {
+/* .react-autosuggest__suggestion  :hover {
     background-color: lightgrey;
-      /* color:black; */
-}
+      /* color:black; 
+} 
+*/
 ul
 {
     padding-inline-start: 0;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border-color: black;
     
 }
+/* ul :hover {
+    background-color: whitesmoke;
+    color: black;
+} */
 
 .react-autosuggest__suggestion {
     background-color:  #01579b;
     color: whitesmoke;
     height:60px;
     border:1px solid black;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     padding-left:2em;
     padding-right:1em;
     /* border-bottom-right-radius: 20px; */
@@ -80,9 +100,20 @@ ul
     width: 700px;
     
 }
+
+/* .react-autosuggest__suggestion :hover {
+    color:black
+} */
 li{
     list-style:none;
 }
+/* li :hover{
+    background-color:#05355a;
+} */
+/* li :last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+} */
   .sugg-option {
     display: flex;
     color: blue;
@@ -90,7 +121,9 @@ li{
     height: 70px;
     padding:0;
   }
-
+  /* .sugg-option :hover {
+      background-color:#05355a;
+  } */
 
   .sugg-option .name {
       color: whitesmoke;
@@ -100,7 +133,7 @@ li{
       padding-bottom: 30px;  
       line-break:strict;
       line-height: normal;   
-      border-radius: 20px 20px 0 0; 
+      /* border-radius: 20px 20px 0 0;  */
       padding-left: 0;
   }
 
