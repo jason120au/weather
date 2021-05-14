@@ -38,11 +38,9 @@
 }
 textarea:focus, input:focus{
     outline:none;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background-color: #05355a;
 }
+
 .name {
     background-color: #01579b;
     border-radius: 20px 20px 0 0;
