@@ -36,7 +36,12 @@ body {
     border:1px solid red;
     box-shadow: 0 0 10px #719ECE;
 }
-
+.highlight
+{
+    color:white;
+    font-weight: bold;
+    border: none;
+}
 .react-autosuggest__input {
     width: 700px;
     height: 60px;
