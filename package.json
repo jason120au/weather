@@ -38,13 +38,13 @@
     "browserslist": {
         "production": [
             ">0.2%",
-            "notdead",
-            "notop_miniall"
+            "not dead",
+            "no top_mini all"
         ],
         "development": [
-            "last1chromeversion",
-            "last1firefoxversion",
-            "last1safariversion"
+            "last 1 chrom eversion",
+            "last 1 firefox version",
+            "last 1 safari version"
         ]
     }
 }
