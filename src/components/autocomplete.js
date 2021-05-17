@@ -57,7 +57,7 @@ class Autocomplete extends React.Component {
                     this.setState({
                         suggestions: data
                     });
-                    console.log(data)
+                    
                 }
             })
     };
@@ -71,7 +71,8 @@ class Autocomplete extends React.Component {
 
     getSuggestionValue(suggestion) {
         return `${suggestion.text}`;
-      }
+    }
+
       
       renderSuggestion(suggestion, { query }) {
         const suggestionText = `${suggestion.text}`;
@@ -79,7 +80,7 @@ class Autocomplete extends React.Component {
         const parts = AutosuggestHighlightParse(suggestionText, matches);
       
         return (
-          <span className={'suggestion-content ' + suggestion.twitter}>
+          <span className={'suggestion-content ' }>
             <span className="name">
               {
                 parts.map((part, index) => {
@@ -94,8 +95,11 @@ class Autocomplete extends React.Component {
           </span>
         );
       }
+      onSelected(event, { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }) {
+          console.log(suggestion);
+      }
 
-
+    
 
 
     render() {
@@ -118,6 +122,7 @@ class Autocomplete extends React.Component {
                 onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
                 onSuggestionsClearRequested={this.onSuggestionsClearRequested}
                 getSuggestionValue={this.getSuggestionValue}
+                onSuggestionSelected={this.onSelected}
                 renderSuggestion={this.renderSuggestion}
                 inputProps={inputProps}
             /></div>

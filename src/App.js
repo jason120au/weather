@@ -4,8 +4,18 @@ import Weather from './components/Weather';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import Autocomplete from './components/autocomplete';
 
-
-
+async function getWeatherData(lat,long) {
+  let weatherData = []
+  await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
+      .then(res => res.json())
+      .then(result => {
+        weatherData = result;
+        console.log(weatherData)      
+        });
+        return weatherData;
+}
+getWeatherData(-33.87512285544149, 151.12854025396936)
+// console.log(getWeatherData(-33.87512285544149, 151.12854025396936))
 export default function App() {
   
   const [lat, setLat] = useState([]);
@@ -23,7 +33,7 @@ export default function App() {
       .then(res => res.json())
       .then(result => {
         setData(result)
-        console.log(result);
+        // console.log(result);
       });
     }
     fetchData();
@@ -32,7 +42,7 @@ export default function App() {
   return (
 <div className="App">
 <div>
-  <Autocomplete class="autocomplete-box"></Autocomplete>
+  <Autocomplete></Autocomplete>
     
  </div>
       {(typeof data.main != 'undefined') ? (
