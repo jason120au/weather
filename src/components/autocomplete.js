@@ -1,7 +1,7 @@
 // server.autosuggest.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Autosuggest from 'react-autosuggest';
-
+import Weather from './Weather';
 import './styles.css';
 import AutosuggestHighlightMatch from "autosuggest-highlight/umd/match";
 import AutosuggestHighlightParse from "autosuggest-highlight/umd/parse";
@@ -96,8 +96,17 @@ class Autocomplete extends React.Component {
         );
       }
       onSelected(event, { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }) {
-          console.log(suggestion);
-      }
+            let lat = suggestion.lat;
+            let lon = suggestion.lon;
+            fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
+            .then(res => res.json())
+            .then(result => {
+              console.log(result);
+              <Weather weatherData={result}/>
+              
+            })
+            console.log(suggestion);
+        }
 
     
 
