@@ -124,7 +124,7 @@ class Autocomplete extends React.Component {
 
         // Adding AutoSuggest component
         return (
-            <div class="autocomplete">
+            <div className="autocomplete">
 
             
             <Autosuggest
