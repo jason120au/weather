@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.css';
 import moment from 'moment';
 import { Button } from 'semantic-ui-react';
@@ -8,6 +8,7 @@ const refresh = () => {
   window.location.reload();
 }
 
+let weatherData = '';
 const WeatherCard = ({weatherData}) => (
 
   <div className="main">

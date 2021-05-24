@@ -98,11 +98,12 @@ class Autocomplete extends React.Component {
       onSelected(event, { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }) {
             let lat = suggestion.lat;
             let lon = suggestion.lon;
+            // setData = '';
             fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
             .then(res => res.json())
             .then(result => {
               console.log(result);
-              <Weather weatherData={result}/>
+             
               
             })
             console.log(suggestion);
