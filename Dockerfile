@@ -4,7 +4,7 @@ FROM node:alpine
 #Creates directories
 RUN mkdir -p /usr/src/app
 
-RUN RUN git clone -b main https://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:x-oauth-basic@github.com/jason120au/nextjsjumpcloud.git /usr/src/app
+#RUN RUN git clone -b main https://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:x-oauth-basic@github.com/jason120au/nextjsjumpcloud.git /usr/src/app
 #Sets an environment variable
 ENV PORT 3000
 
