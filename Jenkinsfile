@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('yarn install') {
       steps {
-        echo 'Test'
+        sh 'yarn install'
       }
     }
 
