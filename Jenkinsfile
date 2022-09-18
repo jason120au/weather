@@ -14,11 +14,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Build') {
       steps {
-        sh '''nvm install 16
-nvm use 16
-npm install'''
+        sh 'npm install'
       }
     }
 
