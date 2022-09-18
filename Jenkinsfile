@@ -6,9 +6,10 @@ pipeline {
 
   }
   stages {
-    stage('yarn install') {
+    stage('npm install') {
       steps {
-        sh 'npm install'
+        sh '''nvm install 16
+nvm use 16'''
       }
     }
 
