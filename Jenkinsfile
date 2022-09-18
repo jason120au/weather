@@ -6,15 +6,13 @@ pipeline {
 
   }
   stages {
-    stage('Setup Environment') {
+    stage('Install') {
       steps {
-        sh '''. ~/.nvm/nvm.sh
-. ~/.profile
-. ~/.bashrc'''
+        yarn 'install'
       }
     }
 
-    stage('') {
+    stage('Build') {
       steps {
         yarn 'build'
       }
