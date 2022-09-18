@@ -8,7 +8,9 @@ pipeline {
   stages {
     stage('npm install') {
       steps {
-        sh 'nvm'
+        sh '''. ~/.nvm/nvm.sh
+. ~/.profile
+. ~/.bashrc'''
       }
     }
 
