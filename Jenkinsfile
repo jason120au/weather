@@ -8,8 +8,7 @@ pipeline {
   stages {
     stage('npm install') {
       steps {
-        sh '''nvm install 16
-nvm use 16'''
+        sh 'npm install'
       }
     }
 
