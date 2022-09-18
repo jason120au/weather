@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'WorkerNode'
+    }
+
+  }
   stages {
     stage('yarn install') {
       steps {
