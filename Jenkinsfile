@@ -14,15 +14,9 @@ pipeline {
       }
     }
 
-    stage('Install deps') {
+    stage('') {
       steps {
-        sh 'npm install --legacy-peer-deps'
-      }
-    }
-
-    stage('Build') {
-      steps {
-        sh 'npm run build'
+        yarn 'build'
       }
     }
 
